@@ -1,0 +1,587 @@
+.body{
+    color: rgb(180, 180, 180);
+}
+
+[class^="col-"]{
+    padding: 0;
+}
+
+.col{
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+}
+
+/* верхний контейнер */
+.product-container{
+    position: relative;
+    top: 255px;
+    max-width: 1620px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-rows{
+    gap: 24px;
+    width: 1620px;
+}
+  
+
+/* левая колонка продукта */
+.product-container__left-col{
+    flex: 0 0 550px;
+    /* padding: 0; */
+}
+
+.images-container{
+    border-radius: 30px;
+    height: 462px;
+    width: 550px;
+    padding: 24px;
+    background-color: #FFFFFF;
+}
+
+/* список изображений продукта */
+.images-container__small-images{
+    max-height: 376px;
+    max-width: 64px;
+    gap: 12px;
+}
+
+.upper-switch-arrow, .lower-switch-arrow{
+    max-width: 13px;
+    max-height: 7px;
+    cursor: pointer;
+}
+
+.small-img{
+    max-width: 64px;
+    min-height: 64px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#img-0.small-img{
+    border: 2px solid #353C40;
+}
+
+.upper-switch-arrow{
+    transform: rotate(180deg);
+}
+/* список изображений продукта */
+
+
+/* главное изображение продукта */
+.images-container__big-image{
+    margin-left: 18px;
+    position: relative;
+}
+
+.main-img{
+    width: 414px;
+    height: 414px;
+    border-radius: 20px;
+}
+
+.add-to-favourites{
+    position: absolute;
+    width: 36.89px;
+    height: 31.6px;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+/* главное изображение продукта */
+
+
+/* колонка продавца */
+.seller-info{
+    margin-top: 24px;
+    width: 550px;
+}
+
+.seller-info__text{
+    padding: 0;
+    margin-left: 24px;
+    line-height: 18.75px;
+    width: auto;
+    font-weight: 500;
+}
+
+.seller-info__col{
+    margin-top: 9px;
+    height: 369px;
+    border-radius: 30px;
+    padding: 24px;
+    background-color: #FFFFFF;
+}
+
+.shop-icon-container{
+    border-radius: 12px;
+    background-color: #DB1AE5;
+    height: 44px;
+    max-width: 44px;
+    padding: 8.25px;
+}
+
+.seller-name-and-verification-status{
+    margin-left: 14px;
+    min-width: 282px;
+    height: 47px;
+    gap: 4px;
+}
+
+.seller-name-and-verification-status__name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #353C40;
+}
+
+.verefication-status-info{
+    display: inline-flex !important;
+    background-color: #1A71E5;
+    border-radius: 20px;
+    padding: 3px 12px 3px 6px;
+    color: #F9F9F9;
+    height: 20px;
+    width: 181px;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.verefication-status-info__icon{
+    height: 12px;
+    width: 12px;
+}
+
+.verefication-status-info__vereficated-text{
+    line-height: 14px;
+}
+
+.send-messege__button{
+    display: inline-flex !important;
+    background-color: #353C40;
+    color: #F9F9F9;
+    margin: 0;
+    padding: 3px 6px 3px 6px;
+    border-radius: 77px;
+    height: 20px;
+    font-size: 12px;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.seller-about{
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.seller-about__icon-and-info{
+    gap: 16px;
+    font-size: 14px;
+}
+
+.seller-about__icon-and-info__textdiv{
+    margin-top: 2px;
+    color: #353C40;
+}
+
+.seller-about__icon-and-info__subdiv{
+    font-weight: 500;
+}
+
+.seller-about__icons-list{
+    width: 22px;
+    height: 22px;
+}
+/* колонка продавца */
+/* левая колонка продукта */
+.supdiv-container{
+    gap: 24px;
+}
+
+.second-and-third-row-container{
+    gap: 24px;
+}
+
+/* центральная колонка продукта */
+.product-container__center-col{
+    flex: 0 0 539px;
+}
+
+.product-name{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #353C40;
+}
+
+/* контейнер с сылкой на оценки и вопросы */
+.ratings-and-reviews{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 24px;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.ratings-and-reviews__string{
+    color: #353C40;
+    gap: 10px;
+}
+
+.ratings-and-reviews__string-rating-value{
+    font-weight: 900;
+}
+
+.arrow-link-icon{
+    cursor: pointer;
+}
+/* контейнер с сылкой на оценки и вопросы */
+
+.product-and-link{
+    margin-top: 24px;
+}
+
+.product-and-link__product{
+    font-weight: 500;
+    margin-left: 24px;
+}
+
+.product-and-link__link{
+    margin-right: 24px;
+    font-size: 14px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.product-and-link__link-image{
+    height: 9.5px;
+    width: 9.5px;
+}
+
+/* контейнер с описанием товара */
+.product-description{
+    margin-top: 6px;
+    border-radius: 30px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.product-description__info-string{
+    line-height: 16.4px;
+    gap: 10px;
+}
+
+.product-description__info-string__first-part{
+    line-height: 16.4px;
+}
+
+.product-description__info-string__second-part{
+    font-weight: 600;
+    line-height: 16.4px;
+}
+
+.product-description__info-string__gapdiv{
+    gap: 10px;
+}
+/* контейнер с описанием товара */
+/* центральная колонка продукта */
+
+/* правая колонка продукта */
+.product-container__right-col{
+    flex: 0 0 483px;
+    gap: 24px;
+}
+
+.do-buy-container{
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 30px;
+    gap: 24px;
+}
+
+.do-buy-container__price{
+    gap: 10px;
+}
+
+.do-buy-container__actual-price{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.1px;
+}
+
+/* старая цена - новая цена */
+.do-buy-container__non-actual-price{
+    position: relative;
+    margin-top: 2px;
+    line-height: 18.75px;
+    opacity: 33%;
+}
+
+.do-buy-container__non-actual-price::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 58%;
+    height: 1px;
+    background: #353C40;
+}
+/* старая цена - новая цена */
+
+/* рассрочка */
+.do-buy-container__installment{
+    border-radius: 77px;
+    background-color: #F9F9F9;
+    padding: 9px 16px;
+    gap: 24px;
+}
+
+.do-buy-container__installment-text{
+    line-height: 18.75px;
+    font-weight: 500;
+}
+
+.do-buy-container__installment-price{
+    background-color: #6EF49D;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 6px 12px;
+    font-weight: 500;
+    max-width: 143px;
+}
+
+.do-buy-container__installment-arrow{
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+/* рассрочка */
+
+/* покупка */
+.do-buy-container__buy{
+    gap: 24px;
+}
+
+.do-buy-container__buy-at-one-click{
+    background-color: #FFDEDE;
+    border-radius: 77px;
+    padding: 11px 16px;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.do-buy-container__buy-at-one-click__text{
+    line-height: 18.75px;
+    color: #FF0000;
+}
+
+.do-buy-container__add-to-cart{
+    background-color: #FF0000;
+    border-radius: 77px;
+    padding: 11px 16px;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.do-buy-container__add-to-cart__text{
+    color: #F9F9F9;
+    line-height: 18.75px;
+}
+/* покупка */
+
+/* доп. информация о продукте и доставке */
+.do-buy-container__buy__description{
+    gap: 24px;
+}
+
+.do-buy-container__buy__description-container{
+    gap: 10px;
+    max-height: 22px;
+}
+
+.do-buy-container__buy__description-text{
+    margin-top: 5px;
+    line-height: 16.4px;
+    font-size: 14px;
+}
+
+.do-buy-container__buy__description-delivery-date{
+    margin-top: 3px;
+    line-height: 16.4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* доп. информация о продукте и доставке */
+
+/* доставка */
+.delivery{
+    gap: 9px
+}
+
+.delivery-title{
+    margin-left: 24px;
+    line-height: 18.75px;
+    font-weight: 500;
+}
+
+.delivery-container{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 24px;
+    gap: 24px;
+}
+
+.delivery-container__location{
+    gap: 16px;
+}
+
+.delivery-container__location-upper-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.delivery-container__location-lower-text{
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.delivery-container__delivery{
+    gap: 16px;
+    max-height: 22px;
+}
+
+.delivery-container__delivery__for-free{
+    background-color: #FFF0F0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    padding: 3px 12px;
+}
+
+.delivery-container__delivery__subdiv{
+    line-height: 16.41px;
+}
+
+.delivery-container__delivery__title{
+    font-size: 14px; 
+}
+
+.delivery-container__delivery__date{
+    font-size: 14px; 
+    font-weight: 600;
+    opacity: 33%;
+}
+/* доставка */
+/* правая колонка продукта */
+
+/* правый нижний контейнер с отзывами к продукту */
+.reviews-container{
+    gap: 9px;
+}
+
+.reviews-container__title{
+    margin-left: 24px;
+    font-weight: 500;
+    line-height: 18.75px;
+}
+
+.reviews-container__link{
+    margin-right: 24px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.reviews-container__link-text{
+    font-size: 14px;
+    margin-top: px;
+    line-height: 16.41px;
+}
+
+.reviews-container__link-icon{
+    
+}
+
+/* левая колонка с изображениями */
+.reviews-container__content{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 24px;
+    gap: 24px;
+}
+
+.reviews-container__content__images, .reviews-container__content__images-string{
+    gap: 18px;
+}
+
+.reviews-container__content__image{
+    max-width: 83px;
+    max-height: 83px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* левая колонка с изображениями */
+.reviews-container__sub-div{
+    gap: 24px;
+}
+
+.reviews-container__review-container{
+    padding: 12px;
+    background-color: #F6F7F8;
+    border-radius: 12px;
+    gap: 6px;
+    max-width: 664px;
+    cursor: pointer;
+}
+
+.reviews-container__review-container__icon-and-fio{
+    gap: 16px;
+}
+
+.reviews-container__review-container__fio{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #646D74;
+}
+
+.reviews-container__review-container__fio-and-review{
+    gap: 6px;
+}
+
+.reviews-container__review-container__review-and-date{
+    max-height: 12px;
+    gap: 4px;
+}
+
+.reviews-container__review-container__star-icon{
+    max-width: 10px;
+    max-height: 10px;
+}
+
+.reviews-container__review-container__date{
+    font-size: 10px;
+    line-height: 11.7px;
+    margin-left: 6px;
+    color: #808A93;
+}
+
+.reviews-container__review-container__messege{
+    font-size: 12px;
+    line-height: 14.06px;
+    color: #95A1AC;
+}
+
+/* правая колонка с отзывами */
+
+/* правая колонка с отзывами */
+/* правый нижний контейнер с отзывами к продукту */
+
+/* верхний контейнер */

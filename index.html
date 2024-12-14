@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>aboba</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body style="background-color: rgb(233, 233, 233);">
+
+    <div class="product-container text-center">
+      <div class="row content-rows">
+
+        <!-- левая колонка с изображениями продутка -->
+        <div class="col product-container__left-col">
+          <div class="row images-container text-center">
+
+            <!-- Список маленьких изображений продукта -->
+            <div class="col d-flex flex-column align-items-center images-container__small-images">
+              <img class="upper-switch-arrow" src="/public/arrow.up.right.svg" alt="">
+              <img class="small-img" id="img-0" src="/public/cat.jpg" alt="">
+              <img class="small-img" id="img-1" src="/public/cat.jpg" alt="">
+              <img class="small-img" id="img-2" src="/public/cat.jpg" alt="">
+              <img class="small-img" id="img-3" src="/public/cat.jpg" alt="">
+              <img class="small-img" id="img-4" src="/public/cat.jpg" alt="">
+              <img class="lower-switch-arrow" src="/public/arrow.up.right.svg" alt="">
+            </div>
+
+            <!-- Главное изображение продукта -->
+            <div class="col images-container__big-image">
+              <img class="main-img" src="/public/cat.jpg" alt="">
+              <img class="add-to-favourites" src="/public/add.to.favourites.svg" alt="">
+            </div>
+          </div>
+          <div class="row seller-info text-start">
+            <div class="seller-info__text">Продавец</div>
+            <div class="seller-info__col">
+
+              <div class="row ">
+
+                <!-- Иконка магазина -->
+                <div class="col shop-icon-container">
+                  <img class="shop-icon" src="/public/shop.icon.svg" alt="">
+                </div>
+
+                <!-- Название магазина/имя продавца и статус верификации -->
+                <div class="col d-flex flex-column seller-name-and-verification-status">
+                  <div class="seller-name-and-verification-status__name">Магазин или продавец</div>
+                  <div class="d-flex align-items-center verefication-status-info">
+                    <img class="verefication-status-info__icon" src="/public/security-user.svg" alt=""> <div class="verefication-status-info__vereficated-text">Проверенный поставщик</div>
+                  </div>
+                </div>
+
+                <!-- Кнопка "написать продавцу" -->
+                <div class="col d-flex text-end justify-content-end align-items-center send-messege-button">
+                  <div class="d-flex align-items-center send-messege__button">
+                    <div>Написать в магазин</div>
+                    <img src="/public/messages-3.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Краткая информация о продавце и доставке -->
+              <div class="d-flex flex-column text-start seller-about">
+
+                <div class="d-flex align-items-center seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/star.svg" alt="">
+                  <div class="d-flex seller-about__icon-and-info__textdiv">
+                    <div class="me-1 seller-about__icon-and-info__subdiv">4.9</div>
+                    Рейтинг продавца
+                  </div>
+                </div>
+
+                <div class="d-flex seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/like.svg" alt="">
+                  <div class="seller-about__icon-and-info__textdiv">
+                    Цены что надо
+                  </div>
+                </div>
+
+                <div class="d-flex seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/routing.svg" alt="">
+                  <div class="d-flex seller-about__icon-and-info__textdiv">
+                    <div class="me-1 seller-about__icon-and-info__subdiv">98%</div>
+                    вовремя. Доставка сервисами Exzap SDEK
+                  </div>
+                </div>
+
+                <div class="d-flex seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/shield.svg" alt="">
+                  <div class="seller-about__icon-and-info__textdiv">
+                    Проверенный поставщик
+                  </div>
+                </div>
+
+                <div class="d-flex seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/security-card.svg" alt="">
+                  <div class="seller-about__icon-and-info__textdiv">
+                    Безопасная оплата
+                  </div>
+                </div>
+
+                <div class="d-flex seller-about__icon-and-info">
+                  <img class="seller-about__icons-list" src="/public/empty-wallet-change.svg" alt="">
+                  <div class="seller-about__icon-and-info__textdiv">
+                    Возврат 7 дней
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Вспомогательный контейнер -->
+        <div class="col d-flex flex-column supdiv-container">
+          <div class="row second-and-third-row-container">
+          <!-- центральная колонка с названием, оценками и вопросами к продукту -->
+            <div class="col product-container__center-col">
+              <div class="text-start product-name">Насос ГУР Оригинал IXETIC \LUK восст.BMW X1 [E84] 20 [гар 1 год] P0339</div>
+
+              <!-- контейнер с сылкой на оценки и вопросы -->
+              <div class="text-start d-flex flex-column ratings-and-reviews">
+
+                <div class="d-flex ratings-and-reviews__string">
+                  <img class="ratings-and-reviews__icons" src="/public/star2.svg" alt="">
+                  <div class="d-flex">
+                    <div class="d-flex me-1 ratings-and-reviews__string-rating-value">4.9</div>• 151 отзыв
+                  </div>
+                  <img class="arrow-link-icon" src="/public/arrow.diagonal.right.svg" alt="">
+                </div>
+
+                <div class="d-flex ratings-and-reviews__string">
+                  <img class="ratings-and-reviews__icons" src="/public/message-question.svg" alt="">
+                  101 вопрос о товаре
+                  <img class="arrow-link-icon" src="/public/arrow.diagonal.right.svg" alt="">
+                </div>
+
+                <div class="d-flex ratings-and-reviews__string">
+                  <img class="ratings-and-reviews__icons" src="/public/shield-tick.svg" alt="">
+                  Оригинальная запчасть
+                </div>
+              </div>
+
+              <div class="row product-and-link">
+                <div class="col text-start product-and-link__product">Товар</div> 
+                <div class="col d-flex justify-content-end align-items-center product-and-link__link">Перейти к характеристикам <img class="product-and-link__link-image" src="/public/arrow.diagonal.right.svg" alt=""></div>
+              </div>
+              <!-- контейнер с описанием товара -->
+              <div class="text-start d-flex flex-column product-description">
+                <div class="d-flex product-description__info-string">
+                  <div class="text-secondary product-description__info-string__first-part">
+                    Артикул
+                  </div>
+                  <div class="product-description__info-string__second-part">000 000 00 00</div>
+                </div>
+
+                <div class="d-flex product-description__info-string">
+                  <div class="text-secondary product-description__info-string__first-part">
+                    Номер
+                  </div>
+                  <div class="product-description__info-string__second-part">11299001409</div>
+                </div>
+
+                <div class="d-flex product-description__info-string">
+                  <div class="text-secondary product-description__info-string__first-part">
+                    Производитель
+                  </div>
+                  <div class="product-description__info-string__second-part">REIKANEN</div>
+                </div>
+
+                <div class="d-flex product-description__info-string">
+                  <div class="text-secondary product-description__info-string__first-part">
+                    Страна
+                  </div>
+                  <div class="product-description__info-string__second-part">Китай</div>
+                </div>
+
+                <div>
+                  <div class="d-flex flex-column product-description__info-string__gapdiv">
+                    <div class="text-secondary product-description__info-string__first-part">
+                      Аналоги
+                    </div>
+                    <div class="product-description__info-string__second-part"><a href="">11299001409 63.11299001409 P0339</a></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="d-flex flex-column product-description__info-string__gapdiv">
+                    <div class="text-secondary product-description__info-string__first-part">
+                      Подходит для автомобилей
+                    </div>
+                    <div class="product-description__info-string__second-part">BMW X1 xDrive N20B20, GAZel NEXT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- правая колонка с оплатой и доставкой -->
+            <div class="col d-flex flex-column product-container__right-col">
+              <div class="d-flex flex-column do-buy-container">
+
+                <!-- строка с ценой -->
+                <div class="d-flex align-items-center do-buy-container__price">
+                  <div class="do-buy-container__actual-price">ХХХ ХХХ.ХХ Х </div>
+                  <div class="d-inline-block do-buy-container__non-actual-price">ХХХ ХХХ ХХХ.ХХ</div>
+                </div>
+
+                <!-- рассрочка -->
+                <div class="row text-start align-items-center  do-buy-container__installment">
+                  <div class="col-auto do-buy-container__installment-text">Рассрочка</div>
+                  <div class="col do-buy-container__installment-price">от ХХХ ХХХ.ХХ х/мес</div>
+                  <div class="col text-end"><img class="do-buy-container__installment-arrow" src="/public/arrow.up.right.svg" alt=""></div>
+                </div>
+                
+                <div class="row do-buy-container__buy">
+
+                  <!-- купить в один клик -->
+                  <div class="col row align-items-center do-buy-container__buy-at-one-click">
+                    <div class="col do-buy-container__buy-at-one-click__text">Купить в один клик</div>
+                    <img class="col-auto" src="/public/clock.svg" alt="">
+                  </div>
+
+                  <!-- в корзину -->
+                  <div class="col-auto row align-items-center do-buy-container__add-to-cart">
+                    <div class="col do-buy-container__add-to-cart__text">В корзину</div>
+                    <img class="col-auto" src="/public/cart.badge.plus.svg" alt="">
+                  </div>
+                  
+                  <!-- доп. информация о продукте и доставке -->
+                  <div class="d-flex flex-column do-buy-container__buy__description">
+
+                    <div class="d-flex align-items-center do-buy-container__buy__description-container">
+                      <img src="/public/truck.svg" alt="">
+                      <div class="do-buy-container__buy__description-text">Доставим</div>
+                      <div class="do-buy-container__buy__description-delivery-date">16.09.2024</div>
+                    </div>
+
+                    <div class="d-flex do-buy-container__buy__description-container">
+                      <img src="/public/3d-cube-scan.svg" alt="">
+                      <div class="do-buy-container__buy__description-text">Осталось 3 штуки</div>
+                    </div>
+
+                    <div class="d-flex do-buy-container__buy__description-container">
+                      <img src="/public/people.svg" alt="">
+                      <div class="do-buy-container__buy__description-text">161 человек купил на этой неделе</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- информация о доставке -->
+              <div class="d-flex flex-column delivery">
+                <div class="text-start delivery-title">Доставка</div>
+                <div class="text-start d-flex flex-column delivery-container" >
+
+                  <div class="row delivery-container__location">
+                    <img class="col-auto" src="/public/location.svg" alt="">
+                    <div class="col d-flex flex-column">
+                      <div class="delivery-container__location-upper-text">Узбекистан, Ташкент</div>
+                      <div class="delivery-container__location-lower-text">Со склада Exzap, Ташкент</div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center delivery-container__delivery">
+                    <div class="col-auto delivery-container__delivery__for-free">Бесплатно</div>
+                    <div class="col d-flex delivery-container__delivery__subdiv">
+                      <div class="me-1 delivery-container__delivery__title">курьером</div>
+                      <div class="delivery-container__delivery__date">16.09.2024</div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center delivery-container__delivery">
+                    <div class="col-auto delivery-container__delivery__for-free">Бесплатно</div>
+                    <div class="col d-flex delivery-container__delivery__subdiv">
+                      <div class="me-1 delivery-container__delivery__title">в пункт выдачи</div>
+                      <div class="delivery-container__delivery__date">16.09.2024</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- контейнер с отзывами -->
+          <div class="row reviews-container">
+            <div class="col text-start reviews-container__title">Отзывы, фото и видео товара</div>
+            <div class="col-auto row align-items-center text-end reviews-container__link">
+              <div class="col reviews-container__link-text"> Все отзывы</div>
+              <img class="col-auto reviews-container__link-icon" src="/public/arrow.diagonal.right.svg" alt="">
+            </div>
+
+            <div class="row reviews-container__content">
+
+              <!-- левая колонка с медиафайлами -->
+              <div class="col-auto d-flex flex-column reviews-container__content__images">
+
+                <!-- Первая строка с изображениями -->
+                <div class="d-flex reviews-container__content__images-string">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                </div>
+              
+                <!-- Вторая строка с изображениями -->
+                <div class="d-flex reviews-container__content__images-string">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                  <img class="col reviews-container__content__image" src="/public/cat.jpg" alt="">
+                </div>
+              </div>
+
+              <!-- правая колонка с отзывами -->
+              <div class="col d-flex flex-column reviews-container__sub-div">
+
+                <!-- верхний отзыв -->
+                <div class="text-start d-flex flex-column reviews-container__review-container">
+                  <div class="row reviews-container__review-container__icon-and-fio">
+                    <img class="col-auto reviews-container__review-container__icon" src="/public/user.icon.svg" alt="">
+                    <div class="col d-flex flex-column reviews-container__review-container__fio-and-review">
+                      <div class="reviews-container__review-container__fio">Иванов Иван Иванович</div>
+                      <div class="row reviews-container__review-container__review-and-date">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <div class="col reviews-container__review-container__date">20 ноября 2024</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-truncate reviews-container__review-container__messege">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis corporis error voluptate explicabo magni commodi id ex accusantium doloremque nisi numquam cum voluptatibus iste, harum deleniti perferendis incidunt aperiam. Porro quibusdam expedita nisi odio ab laboriosam nihil quasi fugit, ipsam dolorem rem iure provident consectetur excepturi deleniti beatae at.</div>
+                </div>
+
+                <!-- нижний отзыв -->
+                <div class="text-start d-flex flex-column reviews-container__review-container">
+                  <div class="row reviews-container__review-container__icon-and-fio">
+                    <img class="col-auto reviews-container__review-container__icon" src="/public/user.icon.svg" alt="">
+                    <div class="col d-flex flex-column reviews-container__review-container__fio-and-review">
+                      <div class="reviews-container__review-container__fio">Иванов Иван Иванович</div>
+                      <div class="row reviews-container__review-container__review-and-date">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <img class="col reviews-container__review-container__star-icon" src="/public/star2.svg" alt="">
+                        <div class="col reviews-container__review-container__date">20 ноября 2024</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-truncate reviews-container__review-container__messege">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis corporis error voluptate explicabo magni commodi id ex accusantium doloremque nisi numquam cum voluptatibus iste, harum deleniti perferendis incidunt aperiam. Porro quibusdam expedita nisi odio ab laboriosam nihil quasi fugit, ipsam dolorem rem iure provident consectetur excepturi deleniti beatae at.</div>
+                </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
